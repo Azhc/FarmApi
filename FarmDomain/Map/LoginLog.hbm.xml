@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="FarmDomain" namespace="FarmDomain.Entities" 
+        xmlns="urn:nhibernate-mapping-2.2">
+	<class name="LoginLog" table="LoginLog" lazy="true" >
+		<id name="LoginID">
+			<column name="LoginID" sql-type="int" not-null="true" />
+			<generator class="identity" />
+		</id>
+		<property name="LoginDate">
+			<column name="LoginDate" sql-type="datetime" not-null="false" />
+		</property>
+		<property name="LoginTel">
+			<column name="LoginTel" sql-type="nvarchar" length="100" not-null="false" />
+		</property>
+		<property name="LoginRemark">
+			<column name="LoginRemark" sql-type="nvarchar" length="900" not-null="false" />
+		</property>
+		<property name="VerCode">
+			<column name="VerCode" sql-type="nvarchar" length="50" not-null="false" />
+		</property>
+		<property name="ErrorCode">
+			<column name="ErrorCode" sql-type="nvarchar" length="50" not-null="false" />
+		</property>
+		<property name="ErrorDec">
+			<column name="ErrorDec" sql-type="nvarchar" length="500" not-null="false" />
+		</property>
+		<property name="SmsID">
+			<column name="SmsID" sql-type="varchar" length="50" not-null="false" />
+		</property>
+	</class>
+</hibernate-mapping>

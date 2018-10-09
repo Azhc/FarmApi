@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+This template was written to work with NHibernate.Test.
+Copy the template to your NHibernate.Test project folder and rename it in hibernate.cfg.xml and change it 
+for your own use before compile tests in VisualStudio.
+-->
+<!-- This is the System.Data.dll provider for SQL Server -->
+<hibernate-configuration  xmlns="urn:nhibernate-configuration-2.2" >
+  <session-factory >
+    <!--数据库的类型-->
+    <property name="connection.driver_class">NHibernate.Driver.SqlClientDriver</property>
+    <!--连接字符串-->
+    <property name="connection.connection_string">
+      Server=localhost;database=FarmApi;uid=sa;pwd=sa
+    </property>
+    <!--方言的类名，可以让nhibernate使用数据库的某些特性-->
+    <property name="dialect">NHibernate.Dialect.MsSql2008Dialect</property>
+    <mapping  assembly="FarmDomain"/>
+  </session-factory>
+</hibernate-configuration>

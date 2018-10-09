@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="FarmDomain" namespace="FarmDomain.Entities" 
+        xmlns="urn:nhibernate-mapping-2.2">
+	<class name="GetSmsReturn" table="GetSmsReturn" lazy="true" >
+		<id name="LogID">
+			<column name="LogID" sql-type="int" not-null="true" />
+			<generator class="identity" />
+		</id>
+		<property name="getSmsTel">
+			<column name="getSmsTel" sql-type="varchar" length="50" not-null="false" />
+		</property>
+		<property name="getSmsDate">
+			<column name="getSmsDate" sql-type="datetime" not-null="false" />
+		</property>
+		<property name="respCode">
+			<column name="respCode" sql-type="varchar" length="50" not-null="false" />
+		</property>
+		<property name="respDesc">
+			<column name="respDesc" sql-type="varchar" length="200" not-null="false" />
+		</property>
+		<property name="failCount">
+			<column name="failCount" sql-type="varchar" length="50" not-null="false" />
+		</property>
+		<property name="smsId">
+			<column name="smsId" sql-type="varchar" length="50" not-null="false" />
+		</property>
+		<property name="VerCode">
+			<column name="VerCode" sql-type="varchar" length="50" not-null="false" />
+		</property>
+	</class>
+</hibernate-mapping>

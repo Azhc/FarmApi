@@ -1,0 +1,15 @@
+D:\FarmApi\FarmApi\FarmDomain\bin\Release\Map\GetSmsReturn.hbm.xml
+D:\FarmApi\FarmApi\FarmDomain\bin\Release\FarmDomain.dll
+D:\FarmApi\FarmApi\FarmDomain\bin\Release\FarmDomain.pdb
+D:\FarmApi\FarmApi\FarmDomain\bin\Release\Iesi.Collections.dll
+D:\FarmApi\FarmApi\FarmDomain\bin\Release\NHibernate.dll
+D:\FarmApi\FarmApi\FarmDomain\bin\Release\Iesi.Collections.xml
+D:\FarmApi\FarmApi\FarmDomain\bin\Release\NHibernate.xml
+D:\FarmApi\FarmApi\FarmDomain\obj\Release\FarmDomain.dll
+D:\FarmApi\FarmApi\FarmDomain\obj\Release\FarmDomain.pdb
+D:\FarmApi\FarmApi\FarmDomain\bin\Release\Map\LoginLog.hbm.xml
+D:\FarmApi\FarmApi\FarmDomain\obj\Release\FarmDomain.csprojResolveAssemblyReference.cache
+D:\FarmApi\FarmApi\FarmDomain\bin\Release\JWT.dll
+D:\FarmApi\FarmApi\FarmDomain\bin\Release\Newtonsoft.Json.dll
+D:\FarmApi\FarmApi\FarmDomain\bin\Release\Newtonsoft.Json.xml
+D:\FarmApi\FarmApi\FarmDomain\bin\Release\Map\UserInfo.hbm.xml
