@@ -17,6 +17,7 @@ using JWT.Serializers;
 //序列化 反序列化所需库
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Linq;
+using System.Configuration;
 
 namespace FarmApi.Controllers
 
@@ -52,13 +53,14 @@ namespace FarmApi.Controllers
                 //访问url
                 string url = "https://api.miaodiyun.com/20150822/industrySMS/sendSMS";
                 //调用接口开发者id
-                string accountSid = "1";
+                string accountSid = ConfigurationManager.ConnectionStrings["SmsAccountSid"].ToString();
+                string SmsToken = ConfigurationManager.ConnectionStrings["SmsToken"].ToString();
                 //短信内容
                 string content = "您的验证码为" + ranValue + "，如非本人操作，请忽略此短信。【中新一路农场】";
                 //时间戳
                 string timestamp = DateTime.Now.ToString("yyyyMMddHHmmss");
                 //生成md5
-                string md5str = accountSid + "1" + timestamp;
+                string md5str = accountSid + SmsToken + timestamp;
                 string sig = System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile(md5str, "MD5").ToLower();
                 string postdata = "&accountSid=" + accountSid + "&smsContent=" + content + "&to=" + ret.getSmsTel + "&timestamp=" + timestamp + "&sig=" + sig + "&respDataType=JSON";
                 //获取到接口返回的json数据
