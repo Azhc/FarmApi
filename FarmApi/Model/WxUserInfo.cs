@@ -11,7 +11,7 @@ namespace FarmApi.Model
         ///  用户与公众号中唯一的UID
         /// </summary>
         /// <returns></returns>
-        public string UID {get; set; }
+        public string openid { get; set; }
 
         /// <summary>
         /// 用户token 获取用户信息等

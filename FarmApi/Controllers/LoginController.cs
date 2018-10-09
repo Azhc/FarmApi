@@ -53,8 +53,8 @@ namespace FarmApi.Controllers
                 //访问url
                 string url = "https://api.miaodiyun.com/20150822/industrySMS/sendSMS";
                 //调用接口开发者id
-                string accountSid = ConfigurationManager.ConnectionStrings["SmsAccountSid"].ToString();
-                string SmsToken = ConfigurationManager.ConnectionStrings["SmsToken"].ToString();
+                string accountSid = ConfigurationManager.AppSettings["SmsAccountSid"].ToString();
+                string SmsToken = ConfigurationManager.AppSettings["SmsToken"].ToString();
                 //短信内容
                 string content = "您的验证码为" + ranValue + "，如非本人操作，请忽略此短信。【中新一路农场】";
                 //时间戳
